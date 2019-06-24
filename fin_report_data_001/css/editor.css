@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*
+	COVER
+*/
+@media (min-width: 576px) {
+	.content {
+		margin-top: 2rem;
+		background-color: rgba(37, 65, 107, .5);
+	}
+}
+
+/*
+	PAGE TABS
+*/
+@media (min-width: 576px) {
+	.page-tabs .menu {
+		margin-left: 2rem;
+	}
+}
+@media (min-width: 576px) {
+	.page-tabs .background-mask {
+		margin-left: 2rem;
+	}
+}

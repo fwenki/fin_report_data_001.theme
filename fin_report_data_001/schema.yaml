@@ -1,0 +1,272 @@
+fin_report_data-overlay:
+    selector: "#overlay"
+    template: '<div id="overlay"></div>'
+    opaque: true
+    contents:
+        - "$overlay"
+    categories:
+        - "$root"   
+# Pages
+fin_report_data-coverpage:
+    type: struct
+    selector: ".page-cover"
+    template: |
+        <div class="page page-cover">
+            <div class="background">
+                <video class="cover-background" loop="loop" autoplay="autoplay" muted="muted" playsinline="playsinline"></video>
+            </div>
+            <div class="content">
+                <div class="scroller">
+                    <div class="block block-top">
+                        <div class="block-titre">
+                            <h1>Activity Report</h1>
+                        </div>
+                    </div>
+                    <div class="block block-bottom">
+                        <div class="block-logo">
+                            <img class="cover-logo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    contents:
+        - ".cover-background"
+        - ".cover-logo"
+        - ".page-cover .block-titre"
+    categories:
+        - "$root"
+fin_report_data-tabspage:
+    type: struct
+    selector: ".page-tabs"
+    template: |
+        <div class="page page-tabs">
+            <div class="background">
+                <video class="tabs-background" loop="loop" autoplay="autoplay" muted="muted" playsinline="playsinline"></video>
+                <div class="background-mask"></div>
+            </div>
+            <div class="menu">
+                <div class="scroller">
+                    <ul class="nav nav-tabs" id="menu-tabs" role="tablist" data-target="#main-tab-content">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="tabsOne-tab" data-component="tab" href="#tabsOne" role="tab" aria-controls="tabsOne" aria-selected="true"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content" id="main-tab-content">
+                <div class="tab-pane fade show active" id="tabsOne" role="tabpanel" aria-labelledby="tabsOne-tab"></div>
+            </div>
+        </div>
+    contents:
+      - id: navtabs
+        selector: "#menu-tabs"
+        type: bs_navtabs
+      - id: tabcontent
+        selector: "#main-tab-content"
+        type: bs_tabcontent
+      - ".tabs-background"
+    categories:
+        - "$root"
+# HTML
+table:
+    template: '<table class="table"></table>'
+    selector: ".table"
+    properties:
+      - id: "striped"
+        title: "Striped"
+        type: "className"
+        input: "choice"
+        choices:
+            "Table-striped": "table-striped" 
+a: 
+    properties:
+      - id: "icon"
+        title: "Icon link"
+        type: "className"
+        input: "choice"
+        choices:
+            "No icon": "no-glyph"
+h1: 
+    properties:
+      - id: "margin"
+        title: "Margin"
+        type: "className"
+        input: "choice"
+        choices:
+            "No margin": "m-b-0"
+            "More margin": "m-b-30"
+      - id: "color"
+        title: "Color"
+        type: "className"
+        input: "choice"
+        choices:
+            "Blue": "blue"              
+h2: 
+    properties:
+      - id: "margin"
+        title: "Margin"
+        type: "className"
+        input: "choice"
+        choices:
+            "No margin": "m-b-0"
+            "More margin": "m-b-30"
+      - id: "color"
+        title: "Color"
+        type: "className"
+        input: "choice"
+        choices:
+            "Blue": "blue"
+h3: 
+    properties:
+      - id: "margin"
+        title: "Margin"
+        type: "className"
+        input: "choice"
+        choices:
+            "No margin": "m-b-0"
+            "More margin": "m-b-30"
+      - id: "color"
+        title: "Color"
+        type: "className"
+        input: "choice"
+        choices:
+            "Blue": "blue"
+h4: 
+    properties:
+      - id: "margin"
+        title: "Margin"
+        type: "className"
+        input: "choice"
+        choices:
+            "No margin": "m-b-0"
+            "More margin": "m-b-30"
+      - id: "color"
+        title: "Color"
+        type: "className"
+        input: "choice"
+        choices:
+            "Blue": "blue"
+h5: 
+    properties:
+      - id: "margin"
+        title: "Margin"
+        type: "className"
+        input: "choice"
+        choices:
+            "No margin": "m-b-0"
+            "More margin": "m-b-30"
+      - id: "color"
+        title: "Color"
+        type: "className"
+        input: "choice"
+        choices:
+            "Blue": "blue"
+h6: 
+    properties:
+      - id: "margin"
+        title: "Margin"
+        type: "className"
+        input: "choice"
+        choices:
+            "No margin": "m-b-0"
+            "More margin": "m-b-30"
+      - id: "color"
+        title: "Color"
+        type: "className"
+        input: "choice"
+        choices:
+            "Blue": "blue"
+p:
+    properties:
+      - id: "margin"
+        title: "Margin"
+        type: "className"
+        input: "choice"
+        choices:
+            "No margin": "m-b-0"
+            "More margin": "m-b-30"
+      - id: "color"
+        title: "Color"
+        type: "className"
+        input: "choice"
+        choices:
+            "Blue": "blue"
+strong:
+    properties:
+      - id: "color"
+        title: "Color"
+        type: "className"
+        input: "choice"
+        choices:
+            "Blue": "blue"
+b:
+    properties:
+      - id: "color"
+        title: "Color"
+        type: "className"
+        input: "choice"
+        choices:
+            "Blue": "blue"
+em:
+    properties:
+      - id: "color"
+        title: "Color"
+        type: "className"
+        input: "choice"
+        choices:
+            "Blue": "blue"           
+u:
+    properties:
+      - id: "color"
+        title: "Color"
+        type: "className"
+        input: "choice"
+        choices:
+            "Blue": "blue"
+sup:
+    properties:
+      - id: "color"
+        title: "Color"
+        type: "className"
+        input: "choice"
+        choices:
+            "Blue": "blue"
+sub:
+    properties:
+      - id: "color"
+        title: "Color"
+        type: "className"
+        input: "choice"
+        choices:
+            "Blue": "blue"
+li:
+    properties:
+      - id: "margin"
+        title: "Margin"
+        type: "className"
+        input: "choice"
+        choices:
+            "More margin": "m-b-10"
+      - id: "color"
+        title: "Color"
+        type: "className"
+        input: "choice"
+        choices:
+            "Blue": "blue"
+video_figure:
+    properties:
+      - id: "inside"
+        title: "Inside"
+        type: "className"
+        input: "choice"
+        choices:
+            "inside": "media-inside"
+image_figure:
+    properties:
+      - id: "inside"
+        title: "Inside"
+        type: "className"
+        input: "choice"
+        choices:
+            "inside": "media-inside"         

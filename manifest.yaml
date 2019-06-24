@@ -1,0 +1,26 @@
+# application/book+yaml
+metadata:
+    title: "Thème - fin report data 001"
+    type: "theme"
+    creator: "messaggio"
+    language: "en"
+    modified: "2015-09-29T17:00:00Z"
+links:
+  - rel: "import"
+    idref: "7e91033c-19b5-4888-967b-4059a3daa5bf"
+resources:
+  - href: "logo.jpg"
+    rel: "cover"
+  - href: "fin_report_data_001/schema.yaml"
+  - href: "fin_report_data_001/css/editor.css"
+  - href: "fin_report_data_001/css/_app.min.css"
+  - href: "fin_report_data_001/js/highcharts.js"
+  - href: "fin_report_data_001/js/data.js"
+paths:
+  - metadata:
+        type: "master"
+        media: all
+    items:
+      - href: "fin_report_data_001/theme-layout.html"
+      - href: "fin_report_data_001/theme-cover.html"
+      - href: "fin_report_data_001/theme-tabs.html"
