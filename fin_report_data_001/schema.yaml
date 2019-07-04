@@ -240,6 +240,14 @@ sub:
         input: "choice"
         choices:
             "Blue": "blue"
+ol:
+    properties:
+      - id: "restart"
+        title: "Numérotation Recommencer"
+        type: "className"
+        input: "choice"
+        choices:
+            "Recommencer": "restart"
 li:
     properties:
       - id: "margin"
