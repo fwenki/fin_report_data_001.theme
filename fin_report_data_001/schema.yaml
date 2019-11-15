@@ -86,7 +86,8 @@ a:
         type: "className"
         input: "choice"
         choices:
-            "No icon": "no-glyph"
+            "after": "glyph-after"
+            "without": "no-glyph"
 h1: 
     properties:
       - id: "margin"
@@ -101,7 +102,8 @@ h1:
         type: "className"
         input: "choice"
         choices:
-            "Blue": "blue"              
+            "Blue": "blue"
+            "Dark-blue": "dark-blue"              
 h2: 
     properties:
       - id: "margin"
@@ -117,6 +119,7 @@ h2:
         input: "choice"
         choices:
             "Blue": "blue"
+            "Dark-blue": "dark-blue"
 h3: 
     properties:
       - id: "margin"
@@ -132,6 +135,7 @@ h3:
         input: "choice"
         choices:
             "Blue": "blue"
+            "Dark-blue": "dark-blue"
 h4: 
     properties:
       - id: "margin"
@@ -162,6 +166,7 @@ h5:
         input: "choice"
         choices:
             "Blue": "blue"
+            "Dark-blue": "dark-blue"
 h6: 
     properties:
       - id: "margin"
@@ -177,6 +182,7 @@ h6:
         input: "choice"
         choices:
             "Blue": "blue"
+            "Dark-blue": "dark-blue"
 p:
     properties:
       - id: "margin"
@@ -192,6 +198,7 @@ p:
         input: "choice"
         choices:
             "Blue": "blue"
+            "Dark-blue": "dark-blue"
 strong:
     properties:
       - id: "color"
@@ -200,6 +207,7 @@ strong:
         input: "choice"
         choices:
             "Blue": "blue"
+            "Dark-blue": "dark-blue"
 b:
     properties:
       - id: "color"
@@ -208,6 +216,7 @@ b:
         input: "choice"
         choices:
             "Blue": "blue"
+            "Dark-blue": "dark-blue"
 em:
     properties:
       - id: "color"
@@ -215,7 +224,8 @@ em:
         type: "className"
         input: "choice"
         choices:
-            "Blue": "blue"           
+            "Blue": "blue"
+            "Dark-blue": "dark-blue"          
 u:
     properties:
       - id: "color"
@@ -224,6 +234,7 @@ u:
         input: "choice"
         choices:
             "Blue": "blue"
+            "Dark-blue": "dark-blue"
 sup:
     properties:
       - id: "color"
@@ -232,6 +243,7 @@ sup:
         input: "choice"
         choices:
             "Blue": "blue"
+            "Dark-blue": "dark-blue"
 sub:
     properties:
       - id: "color"
@@ -240,6 +252,7 @@ sub:
         input: "choice"
         choices:
             "Blue": "blue"
+            "Dark-blue": "dark-blue"
 ol:
     properties:
       - id: "restart"
@@ -262,6 +275,7 @@ li:
         input: "choice"
         choices:
             "Blue": "blue"
+            "Dark-blue": "dark-blue"
 video_figure:
     properties:
       - id: "inside"
@@ -277,4 +291,26 @@ image_figure:
         type: "className"
         input: "choice"
         choices:
-            "inside": "media-inside"         
+            "inside": "media-inside" 
+hr:
+    properties:
+      - id: "style"
+        title: "Style"
+        type: "className"
+        input: "choice"
+        choices:
+            "Dotted": "dotted"
+            "Dashed": "dashed"
+      - id: "size"
+        title: "Size"
+        type: "className"
+        input: "choice"
+        choices:
+            "Bigger": "size-two"
+      - id: "color"
+        title: "Color"
+        type: "className"
+        input: "choice"
+        choices:
+            "Blue": "blue"
+            "Dark-blue": "dark-blue"      
